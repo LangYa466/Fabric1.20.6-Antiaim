@@ -1,11 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "cn.langya.killaura.mixin",
+  "package": "cn.langya.kxdsjxsw.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
   ],
   "client": [
+    "ClientPlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

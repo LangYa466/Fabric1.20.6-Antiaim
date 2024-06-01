@@ -1,4 +1,0 @@
-LangYa
-
-https://github.com/LangYa466/Fabric1.20.6-KillAura
-main,CLASS,cn.langya.killaura.KillAura,net.fabricmc.api.ModInitializer;client,CLASS,cn.langya.killaura.client.KillAuraClient,net.fabricmc.api.ClientModInitializer

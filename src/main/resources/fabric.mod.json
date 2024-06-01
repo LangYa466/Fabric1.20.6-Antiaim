@@ -1,17 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "killaura",
+  "id": "kxdsjxsw",
   "version": "${version}",
-  "name": "KillAura",
+  "name": "狂笑的蛇将写散文",
   "description": "a kid",
-  "authors": [],
-  "contact": {},
+  "authors": [
+    "LangYa"
+  ],
+  "contact": {
+    "repo": "https://github.com/LangYa466/Fabric1.20.6-Antiaim"
+  },
   "license": "All-Rights-Reserved",
-  "icon": "assets/killaura/icon.png",
+  "icon": "icon.png",
   "environment": "*",
-  "entrypoints": {},
+  "entrypoints": {
+    "main": [
+      "cn.langya.kxdsjxsw.Mod"
+    ]
+  },
   "mixins": [
-    "killaura.mixins.json"
+    "kxdsjxsw.mixin.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
