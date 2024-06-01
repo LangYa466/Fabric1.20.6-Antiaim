@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "killaura",
+  "version": "${version}",
+  "name": "KillAura",
+  "description": "a kid",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/killaura/icon.png",
+  "environment": "*",
+  "entrypoints": {},
+  "mixins": [
+    "killaura.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
