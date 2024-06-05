@@ -8,7 +8,6 @@
 package cn.langya.kxdsjxsw.mixin;
 
 import cn.langya.kxdsjxsw.Mod;
-import cn.langya.kxdsjxsw.event.EventPlayerTick;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -22,7 +21,7 @@ public class ClientPlayerEntityMixin {
 	@Inject(at = @At(value = "INVOKE", target = "Lnet/minecraft/client/network/AbstractClientPlayerEntity;tick()V", ordinal = 0), method = "tick()V")
 	private void onTick(CallbackInfo ci)
 	{
-		Mod.eventManager.call(new EventPlayerTick());
+		new Mod().onPlayerTick();
 	}
 
 }

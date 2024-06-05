@@ -1,8 +1,5 @@
 package cn.langya.kxdsjxsw;
 
-import cn.langya.kxdsjxsw.event.EventPlayerTick;
-import com.cubk.event.EventManager;
-import com.cubk.event.annotations.EventTarget;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
@@ -17,11 +14,9 @@ import net.minecraft.client.util.InputUtil;
 
 public class Mod implements ModInitializer {
     private static final MinecraftClient mc = MinecraftClient.getInstance();
-    public static EventManager eventManager = new EventManager();
     private boolean state;
 
-    @EventTarget
-    private void onPlayerTick(EventPlayerTick event) {
+    public void onPlayerTick() {
         if (!state) return;
         if (mc.world != null && mc.player != null) {
             mc.player.headYaw = check(mc.player.headYaw);
@@ -41,7 +36,6 @@ public class Mod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        eventManager.register(this);
         System.out.println("狂笑的蛇将写散文初始化完毕");
 
         // r

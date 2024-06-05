@@ -3,7 +3,7 @@
   "id": "kxdsjxsw",
   "version": "1.0",
   "name": "狂笑的蛇将写散文",
-  "description": "qq 3054086606",
+  "description": "custom you rotation",
   "authors": [
     "LangYa"
   ],
@@ -22,8 +22,8 @@
     "kxdsjxsw.mixin.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
+    "fabricloader": "*",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "1.20.6"
   }
 }
